@@ -1,0 +1,132 @@
+:root {
+    --x: 10px;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* CSS NAV */
+nav {
+    background-color: darkcyan;
+}
+
+ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.menu:first-child > li {
+    border-left: 1px solid white;
+}
+
+ul.menu > li > a {
+    display: block;
+    padding: 1.5rem;
+    text-decoration: none;
+}
+ul.menu > li > a:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+/* CSS HEADER */
+header {
+    background: linear-gradient(blue, darkblue);
+}
+
+h1.subject {
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 3px 2px 2px whitesmoke;
+}
+
+/* CSS MAIN */
+.course {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.title {
+    background-color: darkblue;
+    color: white;
+    padding: var(--x);
+    margin-bottom: 0;
+    border-radius: var(--x) var(--x) 0 0;
+}
+
+.forum {
+    background-color: lightblue;
+    padding: var(--x);
+    border-bottom: 1px solid white;
+}
+
+.forum:last-child {
+    border-radius: 0 0 var(--x) var(--x);
+}
+
+.avatar {
+    width: 120px;
+    border-radius: 50%;
+}
+
+/* CSS ADS */
+.ads > div {
+    width: 14%;
+    background: linear-gradient(blue, darkblue);
+    color: white;
+    text-align: center;
+    padding: 10rem 0;
+    margin-top: var(--x);
+    border-radius: var(--x);
+    position: fixed;
+    z-index: -1;
+}
+
+.ads > div:first-child {
+    left: 0.5%;
+}
+
+.ads > div:last-child {
+    right: 0.5%;
+}
+
+footer {
+    background-color: #0a6fa3;
+    color: white;
+    margin-top: var(--x);
+}
+
+/* CSS SUB */
+.sub {
+    position: relative;
+}
+
+.subcontent {
+    display: none;
+    background-color: bisque;
+    position: absolute;
+    right: 0;
+    min-width: 250px;
+}
+
+.subcontent::after {
+    position: absolute;
+    content: " ";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent bisque transparent;
+    right: 6%;
+    bottom: 100%;
+}
+
+.sub:hover .subcontent {
+    display: block;
+}

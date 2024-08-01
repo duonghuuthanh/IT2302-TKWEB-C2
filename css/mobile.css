@@ -1,0 +1,24 @@
+.ads {
+    display: none;
+}
+
+.course {
+    width: 100%;
+}
+
+.flex {
+    flex-direction: column;
+    align-items: initial;
+}
+
+ul.menu:first-child > li {
+    border-left: none;
+}
+
+.flex.forum, .forum .flex {
+    align-items: center;
+}
+
+header img {
+    max-width: 100%;
+}
