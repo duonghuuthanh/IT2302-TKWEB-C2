@@ -1,3 +1,7 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -106,9 +110,106 @@ footer {
     padding: 2rem;
 }
 
-input[type=search] {
+.input-form {
     width: 100%;
     padding: 10px;
     margin-top: 10px;
     border: 1px solid blue;
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: darkblue;
+    color: white;
+    border: 1px solid blue;
+    padding: 5px;
+    margin-top: 5px ;
+}
+
+a.delete {
+    position: absolute;
+    right: 8px;
+    top: 5px;
+    color: darkblue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a.insert {
+    display: block;
+    text-decoration: none;
+    color: blue;
+    margin: 10px 0;
+}
+
+.form {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.new {
+    border: 2px solid red;
+}
+
+.tab {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.tab > li {
+    margin-right: 5px;
+}
+
+.tab > li > a {
+    display: block;
+    background-color: whitesmoke;
+    padding: 1.5rem;
+}
+
+.active {
+    box-shadow: 3px 2px 1px blue;
+}
+
+a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+.slider {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.slider img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.popup {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+    text-align: center;
+}
+
+.popup img {
+    height: 100vh;
+}
+
+.close {
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 1.5rem;
 }
